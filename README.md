@@ -4,15 +4,15 @@
 
 ## File Location
 
-### Context Blog located in: `lib/abs_wow/blog.ex` with Schema Post located in: `lib/abs_wow/blog/post.ex`
+#### Context Blog located in: `lib/abs_wow/blog.ex` with Schema Post located in: `lib/abs_wow/blog/post.ex`
 
-### Absinthe Schema is located in: `lib/abs_wow_web/schema.ex` Absinte Resolver located in: `lib/abs_wow_web/resolvers/blog_article.ex`
+#### Absinthe Schema is located in: `lib/abs_wow_web/schema.ex` Absinte Resolver located in: `lib/abs_wow_web/resolvers/blog_article.ex`
 
 ## Wormwood File location test
 
-### The GQL files for Wormwood are located in: `test/support/schema/queries`
+#### The GQL files for Wormwood are located in: `test/support/schema/queries`
 
-### The Absinthe Test file is located in: `/test/abs_wow_web/schema/queries/blog_artcile_test.ex`
+#### The Absinthe Test file is located in: `/test/abs_wow_web/schema/queries/blog_artcile_test.ex`
 
 To start your Phoenix server:
 
