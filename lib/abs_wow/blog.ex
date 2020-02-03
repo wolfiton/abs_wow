@@ -6,99 +6,99 @@ defmodule AbsWow.Blog do
   import Ecto.Query, warn: false
   alias AbsWow.Repo
 
-  alias AbsWow.Blog.Posts
+  alias AbsWow.Blog.Post
 
   @doc """
-  Returns the list of posts.
+  Returns the list of post.
 
   ## Examples
 
-      iex> list_posts()
-      [%Posts{}, ...]
+      iex> list_post()
+      [%Post{}, ...]
 
   """
   def list_posts do
-    Repo.all(Posts)
+    Repo.all(Post)
   end
 
   @doc """
-  Gets a single posts.
+  Gets a single post.
 
-  Raises `Ecto.NoResultsError` if the Posts does not exist.
+  Raises `Ecto.NoResultsError` if the Post does not exist.
 
   ## Examples
 
-      iex> get_posts!(123)
-      %Posts{}
+      iex> get_post!(123)
+      %Post{}
 
-      iex> get_posts!(456)
+      iex> get_post!(456)
       ** (Ecto.NoResultsError)
 
   """
-  def get_posts!(id), do: Repo.get!(Posts, id)
+  def get_post!(id), do: Repo.get!(Post, id)
 
   @doc """
-  Creates a posts.
+  Creates a post.
 
   ## Examples
 
-      iex> create_posts(%{field: value})
-      {:ok, %Posts{}}
+      iex> create_post(%{field: value})
+      {:ok, %Post{}}
 
-      iex> create_posts(%{field: bad_value})
+      iex> create_post(%{field: bad_value})
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_posts(attrs \\ %{}) do
-    %Posts{}
-    |> Posts.changeset(attrs)
+  def create_post(attrs \\ %{}) do
+    %Post{}
+    |> Post.changeset(attrs)
     |> Repo.insert()
   end
 
   @doc """
-  Updates a posts.
+  Updates a post.
 
   ## Examples
 
-      iex> update_posts(posts, %{field: new_value})
-      {:ok, %Posts{}}
+      iex> update_post(post, %{field: new_value})
+      {:ok, %Post{}}
 
-      iex> update_posts(posts, %{field: bad_value})
+      iex> update_post(post, %{field: bad_value})
       {:error, %Ecto.Changeset{}}
 
   """
-  def update_posts(%Posts{} = posts, attrs) do
-    posts
-    |> Posts.changeset(attrs)
+  def update_post(%Post{} = post, attrs) do
+    post
+    |> Post.changeset(attrs)
     |> Repo.update()
   end
 
   @doc """
-  Deletes a posts.
+  Deletes a post.
 
   ## Examples
 
-      iex> delete_posts(posts)
-      {:ok, %Posts{}}
+      iex> delete_post(post)
+      {:ok, %Post{}}
 
-      iex> delete_posts(posts)
+      iex> delete_post(post)
       {:error, %Ecto.Changeset{}}
 
   """
-  def delete_posts(%Posts{} = posts) do
-    Repo.delete(posts)
+  def delete_post(%Post{} = post) do
+    Repo.delete(post)
   end
 
   @doc """
-  Returns an `%Ecto.Changeset{}` for tracking posts changes.
+  Returns an `%Ecto.Changeset{}` for tracking post changes.
 
   ## Examples
 
-      iex> change_posts(posts)
-      %Ecto.Changeset{source: %Posts{}}
+      iex> change_post(post)
+      %Ecto.Changeset{source: %Post{}}
 
   """
-  def change_posts(%Posts{} = posts) do
-    Posts.changeset(posts, %{})
+  def change_post(%Post{} = post) do
+    Post.changeset(post, %{})
   end
 end

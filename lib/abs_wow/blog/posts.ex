@@ -1,4 +1,4 @@
-defmodule AbsWow.Blog.Posts do
+defmodule AbsWow.Blog.Post do
   use Ecto.Schema
   import Ecto.Changeset
 

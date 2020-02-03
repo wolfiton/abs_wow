@@ -1,0 +1,4 @@
+fragment BlogArticleFields on BlogArticle {
+  id
+  title
+}
