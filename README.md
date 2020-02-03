@@ -1,19 +1,24 @@
 # AbsWow
 
+# This is a minimal project created for debug of Wormwood
+
+## File Location
+
+### Context Blog located in: `lib/abs_wow/blog.ex` with Schema Post located in: `lib/abs_wow/blog/post.ex`
+
+### Absinthe Schema is located in: `lib/abs_wow_web/schema.ex` Absinte Resolver located in: `lib/abs_wow_web/resolvers/blog_article.ex`
+
+## Wormwood File location test
+
+### The GQL files for Wormwood are located in: `test/support/schema/queries`
+
+### The Absinthe Test file is located in: `/test/abs_wow_web/schema/queries/blog_artcile_test.ex`
+
 To start your Phoenix server:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+- Install dependencies with `mix deps.get`
+- Create and migrate your database with `mix ecto.setup`
+- Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Now you can visit [`localhost:4000`](http://localhost:4000/api/graphqil) from your browser.
+The interface is playground
