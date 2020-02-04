@@ -1,4 +1,4 @@
-# import ./ArticleFields.gql
+#import "./ArticleFields.frag.gql"
 
 query {
   BlogArticles {

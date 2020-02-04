@@ -11,9 +11,8 @@ defmodule AbsWowWeb.BlogArticleTest do
   describe "GetArticles.gql" do
     test "Should return a list of all the Articles (all 2 of them)" do
       result = query_gql()
-      assert {:ok, query_data} = result
-
-      articles = get_in(query_data, [:data, "BlogArticles"])
+      assert {:ok, %{data: %{"BlogArticles" => articles}}} = result
+      IO.inspect(articles)
       assert length(articles) == 2
     end
   end
