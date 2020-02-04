@@ -1,6 +1,6 @@
 # AbsWow
 
-# This is a minimal project created for debug of Wormwood
+# Minimal example project with Wormwood Absinthe Test
 
 ## File Location
 
