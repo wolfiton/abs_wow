@@ -18,6 +18,7 @@
 
 - Install dependencies with `mix deps.get`
 - Edit the `config/dev.exs` and `config/test.exs` with your username of the postgress database user
+
   Example: For me it is `dan`
 
 - Create and migrate your database with `mix ecto.setup`
